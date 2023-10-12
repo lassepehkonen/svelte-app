@@ -3,6 +3,7 @@
     let temperatureFahrenheit = 0;
     let message = "";
   
+    //Celsius to Fahrenheit converter
     function convertToFahrenheit() {
       temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
       temperatureFahrenheit = temperatureFahrenheit.toFixed(2);

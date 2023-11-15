@@ -1,12 +1,13 @@
 <script>
     import Router, {push} from "svelte-spa-router"
+  import Logout from "./Logout.svelte";
 </script>
   
   <nav>
     <ul>
-        <li><a href="/#/">Etusivu</a></li>
-        <li><a href="/#/posts">Postaukset</a></li>
-        <li><a href="/#/users">Käyttäjät</a></li>
+        <li><a href="/#/">Chat</a></li>
+        <li><a href="/#/profile">Profiili</a></li>
+        <li class="logout"><Logout /></li>
     </ul>
   </nav>
   
@@ -44,6 +45,11 @@
     }
   
     a:hover {
-      color: #007bff;
+      color: #1f7a34bf;
     }
+
+  .logout {
+    margin-left: 20%;
+  }
+
   </style>
